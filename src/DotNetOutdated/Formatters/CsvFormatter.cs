@@ -23,7 +23,7 @@ internal class CsvFormatter : IOutputFormatter
                     csv.WriteRecord(new
                     {
                         ProjectName = project.Name,
-                        TargetFrameworkName = targetFramework.Name.DotNetFrameworkName,
+                        TargetFrameworkName = targetFramework.Name,
                         DependencyName = dependency.Name,
                         ResolvedVersion = dependency.ResolvedVersion?.ToString(),
                         LatestVersion = dependency.LatestVersion?.ToString(),
